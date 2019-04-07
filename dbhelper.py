@@ -15,7 +15,7 @@ class DBHelper:
 				cursor.execute(query)
 				named_crimes = []
 				for crime in cursor:
-					print("fuck")
+					print(type(crime[2]))
 					named_crime = {
 						'latitude': crime[0],
 						'longitude': crime[1],
